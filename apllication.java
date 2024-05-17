@@ -40,4 +40,33 @@ class geeksforgeeks {
 			"Even sum of fibonacci series till number " + N
 			+ " is: " + +Fib_Even_Sum(N));
 	}
+ #feature201 worked by belief for hdfc application oct.2023
+
+
+// Java Program to find even indexed
+// Fibonacci Sum in O(Log n) time.
+ 
+class GFG {
+ 
+    static int MAX = 1000;
+ 
+    // Create an array for memoization
+    static int f[] = new int[MAX];
+ 
+    // Returns n'th Fibonacci number
+    // using table f[]
+    static int fib(int n)
+    {
+        // Base cases
+        if (n == 0) {
+            return 0;
+        }
+        if (n == 1 || n == 2) {
+            return (f[n] = 1);
+        }
+ 
+        // If fib(n) is already computed
+        if (f[n] == 1) {
+            return f[n];
+        }
 }
