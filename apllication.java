@@ -40,4 +40,21 @@ class geeksforgeeks {
 			"Even sum of fibonacci series till number " + N
 			+ " is: " + +Fib_Even_Sum(N));
 	}
+#feature202 changes by karthik on oct.2023
+class Main {
+  public static void main(String[] args) {
+
+    int n = 10, firstTerm = 0, secondTerm = 1;
+    System.out.println("Fibonacci Series till " + n + " terms:");
+
+    for (int i = 1; i <= n; ++i) {
+      System.out.print(firstTerm + ", ");
+
+      // compute the next term
+      int nextTerm = firstTerm + secondTerm;
+      firstTerm = secondTerm;
+      secondTerm = nextTerm;
+    }
+  }
+}
 }
