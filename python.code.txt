@@ -23,6 +23,7 @@ for i in range(len(X)):
 
 for r in result:
    print(r)
+
 #feature302 worked by karthik for hdfc appliaction on may.2024
 # Python Program to find the L.C.M. of two input number
 
@@ -46,3 +47,14 @@ num1 = 54
 num2 = 24
 
 print("The L.C.M. is", compute_lcm(num1, num2))
+
+#feature301 worked by belief for hdfc application on may.2024
+# Python program to check if the input number is odd or even.
+# A number is even if division by 2 gives a remainder of 0.
+# If the remainder is 1, it is an odd number.
+
+num = int(input("Enter a number: "))
+if (num % 2) == 0:
+   print("{0} is Even".format(num))
+else:
+   print("{0} is Odd".format(num))
